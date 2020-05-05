@@ -1,0 +1,173 @@
+html,
+body {
+    background: #F5F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    color: #444444;
+    /* overflow: hidden; */
+}
+
+ul {
+    padding: 0;
+    display: block;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                            not supported by any browser */
+}
+
+.container {
+    width: 960px;
+    margin: 30px auto;
+    font-size: 0;
+}
+
+.container>div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.form {
+    background: white;
+    padding: 50px 0 55px 0;
+}
+
+.form {
+    padding: 30px 30px 60px 30px;
+}
+
+h4 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #8B96AA;
+    margin: 20px 0 8px 0;
+}
+
+.add-task {
+    display: block;
+    margin-top: 25px;
+    background: #2978FA;
+    border: 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 20px 60px;
+    user-select: none;
+}
+
+.add-task:hover {
+    cursor: pointer;
+}
+
+.add-task:active {
+    outline-style: none;
+    background: #295bac;
+    color: white;
+}
+
+.input.task-title,
+.input.task-text {
+    background: #F9F9F9;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    width: 100%;
+    /* padding: 10px 0; */
+}
+
+.input.task-title[type="text"],
+.input.task-text[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.task .title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.task {
+    background: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.task h3 {
+    padding: 20px;
+    text-align: justify;
+    border-bottom: #F7F7F7 solid 1px;
+    margin: 0;
+}
+
+.task p {
+    font-size: 14px;
+    padding: 0 20px 40px 20px;
+}
+
+.task .delete-task {
+    font-size: 10px;
+    margin-left: 20px;
+    vertical-align: 1px;
+    cursor: pointer;
+}
+
+.collapse {
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.empty-list {
+    z-index: -1;
+}
+
+.popup-container {
+    top: 0;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.popup {
+    width: 0;
+    height: 0;
+    background: white;
+    padding: 20px;
+    margin: 120px auto;
+}
+
+.data {
+    margin: 20px;
+    font-size: 16px;
+}
+
+.rates {
+    font-size: 16px;
+}
+
