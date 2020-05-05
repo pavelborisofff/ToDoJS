@@ -7,7 +7,7 @@ function checkEmptyTasks() {
 }
 
 function addTaskItem(title, text) {
-    var collapse = '<span class="collapse">&#x25BC;</span>';
+    var collapse = '<span class="collapse down">&#x25BC;</span>';
 
     if (text == '') {
         collapse = '';
@@ -57,19 +57,8 @@ $(function() {
 
     $('ul').on('click', '.collapse', function() {
         var taskText = $(this).parent().siblings('p');
-        
-        $(this).css({
-            transition: 'all 0.2s', 
-            transform: 'rotate(-90deg)'
-        });
-        $.when($(taskText).animate({
-            height: 0,
-            margin: 0,
-            'padding-bottom': 0
-        }, 200)).then(function() {
-            $(taskText).hide();
-            checkEmptyTasks();
-        });
+        $(taskText).slideToggle();
+        $(this).toggleClass('collapsed');
     });
-
+    
 });
