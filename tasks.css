@@ -135,6 +135,16 @@ h4 {
     float: right;
     cursor: pointer;
     margin-right: 10px;
+    transition: 0.2s;
+    transform: rotate(0deg);
+}
+
+.collapsed {
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.2s;
+    transform: rotate(-90deg);
 }
 
 .hidden {
@@ -161,13 +171,3 @@ h4 {
     padding: 20px;
     margin: 120px auto;
 }
-
-.data {
-    margin: 20px;
-    font-size: 16px;
-}
-
-.rates {
-    font-size: 16px;
-}
-
