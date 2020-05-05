@@ -64,16 +64,16 @@ $(function() {
     $('.show-popup').on('click', function() {
         $('.popup-container').show();
         $('html, body').css({
-            position: fixed,
-            overflow: hidden
+            'position': 'fixed',
+            'overflow': 'hidden'
         });
     });
 
     $('.popup').on('click', function() {
         $('.popup-container').hide();
         $('html, body').css({
-            position: unset,
-            overflow: unset
+            'position': 'unset',
+            'overflow': 'unset'
         });
     });
 });
