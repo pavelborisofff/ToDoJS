@@ -4,7 +4,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     color: #444444;
-    overflow: auto;
 }
 
 ul {
@@ -129,7 +128,7 @@ h4 {
 }
 
 .collapse {
-    /* float: right; */
+    float: right;
     cursor: pointer;
     margin-right: 10px;
     transition: 0.2s;
@@ -138,7 +137,7 @@ h4 {
 }
 
 .collapsed {
-    /* float: right; */
+    float: right;
     cursor: pointer;
     margin-right: 10px;
     transition: 0.2s;
@@ -167,11 +166,18 @@ h4 {
     margin: 120px auto;
     z-index: 10;
     text-align: center;
-    
 }
 
 .show-popup {
     margin: 30px;
     padding: 10px;
     font-size: 16px;
+}
+
+.clearfix:after {
+	content		: ".";
+	visibility	: hidden;
+	display		: block;
+	height		: 0;
+	clear		: both;
 }
