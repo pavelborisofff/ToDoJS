@@ -65,7 +65,7 @@ $(function() {
         $('.popup-container').show();
         $('html, body').css({
             position: fixed,
-            top: 0
+            overflow: hidden
         });
     });
 
@@ -73,7 +73,7 @@ $(function() {
         $('.popup-container').hide();
         $('html, body').css({
             position: unset,
-            top: unset
+            overflow: unset
         });
     });
 });
