@@ -60,5 +60,14 @@ $(function() {
         $(taskText).slideToggle();
         $(this).toggleClass('collapsed');
     });
-    
+
+    $('.show-popup').on('click', function() {
+        $('.popup-container').show();
+        $('html, body').css('overflow', 'hidden');
+    });
+
+    $('.popup').on('click', function() {
+        $('.popup-container').hide();
+        $('html, body').css('overflow', 'auto');
+    });
 });
