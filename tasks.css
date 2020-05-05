@@ -4,12 +4,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     color: #444444;
-    /* overflow: hidden; */
+    overflow: auto;
 }
 
 ul {
     padding: 0;
     display: block;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 30px 0;
 }
 
 .unselectable {
@@ -23,9 +29,6 @@ ul {
     /* Firefox */
     -ms-user-select: none;
     /* Internet Explorer/Edge */
-    user-select: none;
-    /* Non-prefixed version, currently
-                            not supported by any browser */
 }
 
 .container {
@@ -38,12 +41,6 @@ ul {
     width: 50%;
     display: inline-block;
     vertical-align: top;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: 300;
-    margin: 30px 0;
 }
 
 .form {
@@ -132,23 +129,21 @@ h4 {
 }
 
 .collapse {
-    float: right;
+    /* float: right; */
     cursor: pointer;
     margin-right: 10px;
     transition: 0.2s;
     transform: rotate(0deg);
+    z-index: 0;
 }
 
 .collapsed {
-    float: right;
+    /* float: right; */
     cursor: pointer;
     margin-right: 10px;
     transition: 0.2s;
     transform: rotate(-90deg);
-}
-
-.hidden {
-    display: none;
+    z-index: 0;
 }
 
 .empty-list {
@@ -165,9 +160,18 @@ h4 {
 }
 
 .popup {
-    width: 0;
-    height: 0;
+    width: 200px;
+    height: 200px;
     background: white;
     padding: 20px;
     margin: 120px auto;
+    z-index: 10;
+    text-align: center;
+    
+}
+
+.show-popup {
+    margin: 30px;
+    padding: 10px;
+    font-size: 16px;
 }
