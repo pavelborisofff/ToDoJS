@@ -63,11 +63,17 @@ $(function() {
 
     $('.show-popup').on('click', function() {
         $('.popup-container').show();
-        $('html, body').css('position', 'fixed');
+        $('html, body').css({
+            position: fixed,
+            top: 0
+        });
     });
 
     $('.popup').on('click', function() {
         $('.popup-container').hide();
-        $('html, body').css('position', 'unset');
+        $('html, body').css({
+            position: unset,
+            top: unset
+        });
     });
 });
