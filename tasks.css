@@ -17,6 +17,10 @@ h2 {
     margin: 30px 0;
 }
 
+h3 {
+    margin: 0;
+}
+
 .unselectable {
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -32,7 +36,7 @@ h2 {
 
 .container {
     width: 960px;
-    margin: 30px auto;
+    margin: 20px auto;
     font-size: 0;
 }
 
@@ -48,10 +52,10 @@ h2 {
 }
 
 .form {
-    padding: 30px 30px 60px 30px;
+    padding: 40px 30px 60px 30px;
 }
 
-h4 {
+.label, .empty-list {
     font-size: 13px;
     font-weight: 400;
     color: #8B96AA;
@@ -86,7 +90,8 @@ h4 {
     border: 1px solid #ECECEC;
     box-sizing: border-box;
     width: 100%;
-    /* padding: 10px 0; */
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .input.task-title[type="text"],
@@ -108,41 +113,9 @@ h4 {
     overflow: hidden;
 }
 
-.task h3 {
-    padding: 20px;
-    text-align: justify;
-    border-bottom: #F7F7F7 solid 1px;
-    margin: 0;
-}
-
 .task p {
     font-size: 14px;
     padding: 0 20px 40px 20px;
-}
-
-.task .delete-task {
-    font-size: 10px;
-    margin-left: 20px;
-    vertical-align: 1px;
-    cursor: pointer;
-}
-
-.collapse {
-    float: right;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: 0.2s;
-    transform: rotate(0deg);
-    z-index: 0;
-}
-
-.collapsed {
-    float: right;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: 0.2s;
-    transform: rotate(-90deg);
-    z-index: 0;
 }
 
 .empty-list {
@@ -180,4 +153,38 @@ h4 {
 	display		: block;
 	height		: 0;
 	clear		: both;
+}
+
+.task-head {
+    padding: 20px;
+    border-bottom: #F7F7F7 solid 2px;
+}
+
+.task-head * {
+    display: inline-block;
+}
+
+.delete-task {
+    width: 20px;
+    height: 20px;
+    background: url(img/clear.png) center no-repeat;
+    margin-left: 20px;
+    cursor: pointer;
+    vertical-align:bottom;
+}
+
+.collapse {
+    width: 20px;
+    height: 20px;
+    background: url(img/arrow.png) center no-repeat;
+    margin: 0;
+    cursor: pointer;
+    float: right;
+    transition: 0.2s;
+    transform: rotate(0deg);
+}
+
+.collapsed {
+    transition: 0.2s;
+    transform: rotate(-90deg);
 }

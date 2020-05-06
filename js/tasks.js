@@ -7,7 +7,7 @@ function checkEmptyTasks() {
 }
 
 function addTaskItem(title, text) {
-    var collapse = '<span class="collapse down">&#x25BC;</span>';
+    var collapse = '<div class="collapse"></div>';
 
     if (text == '') {
         collapse = '';
@@ -16,10 +16,12 @@ function addTaskItem(title, text) {
     }
 
     $('ul').append(
-        '<li class="task">' +
-            '<h3 class="title">' + title +
-                '<span class="delete-task">&#10060;</span>' + collapse + 
-            '</h3>' +
+        '<li class="task">' + 
+            '<div class="task-head clearfix">' + 
+                '<h3 class="title">' + title + '</h3>' + 
+                '<div class="delete-task"></div>' +
+                collapse +
+            '</div>' +
             text +
         '</li>'
     );
